@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#353437","surface-container":"#201f21","on-secondary-container":"#dcb7ff","background":"#131315","primary-fixed-dim":"#00dbe9","outline":"#849495","tertiary":"#f4f5f7","on-primary-fixed":"#002022","on-tertiary":"#2e3132","surface":"#131315","on-secondary":"#480081","surface-container-low":"#1c1b1d","on-primary":"#00363a","primary-fixed":"#7df4ff","on-surface-variant":"#b9cacb","error-container":"#93000a","secondary":"#dcb8ff","secondary-fixed-dim":"#dcb8ff","on-secondary-fixed-variant":"#6700b5","on-primary-fixed-variant":"#004f54","surface-tint":"#00dbe9","on-tertiary-fixed":"#191c1e","tertiary-fixed-dim":"#c5c6c8","surface-bright":"#39393b","on-tertiary-container":"#5c5f61","surface-container-high":"#2a2a2c","surface-variant":"#353437","tertiary-container":"#d8d9db","error":"#ffb4ab","inverse-primary":"#006970","inverse-surface":"#e5e1e4","on-secondary-fixed":"#2c0051","secondary-container":"#7701d0","on-error":"#690005","inverse-on-surface":"#313032","surface-container-lowest":"#0e0e10","on-primary-container":"#006970","on-surface":"#e5e1e4","on-error-container":"#ffdad6","tertiary-fixed":"#e1e2e4","primary-container":"#00f0ff","on-background":"#e5e1e4","primary":"#dbfcff","outline-variant":"#3b494b","surface-dim":"#131315","on-tertiary-fixed-variant":"#444749","secondary-fixed":"#efdbff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"1.25rem","space-lg":"1.5rem","space-xs":"0.25rem","space-xl":"3rem","margin-desktop":"4rem","space-sm":"0.5rem","gutter-desktop":"2.5rem","space-md":"1rem","gutter":"1.5rem"},fontFamily:{"display-hero-mobile":["Syne"],"headline-sm":["Syne"],"label-mono":["Space Grotesk"],"headline-md":["Syne"],"body-md":["Space Grotesk"],"headline-xl-mobile":["Syne"],"body-xl":["Space Grotesk"],"headline-lg-mobile":["Syne"],"display-hero":["Syne"],"body-sm":["Space Grotesk"],"label-caps":["Space Grotesk"],"headline-xl":["Syne"],"headline-lg":["Syne"]},fontSize:{"display-hero-mobile":["44px",{"lineHeight":"50px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"600"}],"label-mono":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.015em","fontWeight":"400"}],"headline-xl-mobile":["34px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-xl":["18px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"display-hero":["80px",{"lineHeight":"88px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"600"}],"headline-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Kaizen Studio Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB_X7IowaSVZSkmTr-Rh4S4gmZOaUK-KZq1DiD5QsOoFUdn4dDxz572xw07CitdKC-Ev-FutvwRNqSwF8SC78iWZ2MRPAANVZScZOHB91iNycZmJQJL2O1AEG27SfqGjFoRjrjPbUFgx9Wq6jEBQPDQ2bca7ZSkSNjpwpV2hQerS5d_MItwVe26RjTxJUNQmYqdlVREgwQKxDIgJO7p3NrsPky9-NDKKikHxtBWJ3En"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">Kaizen Studio</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">2D / 3D Visual Atelier</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-surface-container-highest text-primary font-bold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.25)]"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="work" href="#">Work / 精選作品</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-surface-container-highest text-primary font-bold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.25)]" data-path="case-studies" href="#">Case Studies / 案例</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="about" href="#">About / 關於</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="skills" href="#">Skills / 技能</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="contact" href="#">Contact / 聯絡</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/40"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-secondary uppercase">AVAILABLE FOR COMMISSIONS</span></div><div class="h-8 w-px bg-surface-container-highest mx-space-xs hidden sm:block"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3jSKugiXvDx7jGflCPm9MAJLEEvLBhkGAnLiT3wa3-Esj8PWc99uwT5e3mAjML1AhWPyupb0g8OK2qzt9uFbkxGJWUuduF2vmgO00k-0RX_neukAmdFywJqXuDAegwSzYC3oIS4YS4Qpl6ZNjqLskGseMXc7i3nPXvN82wXLqU9tqTu7-4HOFzCil6mj4glsRwKw_MuDOhp7yQ5PJzM-dBV3ShLmV_BzzCmsaatE"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Intro Ribbon & Case Study Header -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl flex flex-col gap-space-lg relative overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md z-10">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">ARCHIVE // CASE STUDY #04</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">DEEP DIVE PROCESS</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight">
+          CASE STUDIES / <span class="text-primary-fixed-dim">深入案例解析</span>
+</h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+          Complete creative process, algorithmic topology, and photon-accurate raytracing from initial micro-sketches to definitive kinetic horology.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto bg-surface-container-low px-space-md py-space-sm rounded-xl shadow-md">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">DOCUMENTATION CODE: <strong class="text-on-surface">KZ-CHR-2024-V3</strong></span>
+</div>
+</div>
+</section>
+<!-- Section 1: Project Cover & Metadata Bar -->
+<section class="w-full px-margin md:px-margin-desktop pb-space-xl relative">
+<div class="relative w-full rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest group">
+<div class="w-full h-[65vh] min-h-[500px] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Cinematic macro shot of an avant-garde luxury mechanical tourbillon watch floating in obsidian space with dark titanium gears, glowing electric cyan accents, sapphire crystal facets, and subtle chromatic refraction." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlsc98Tfhpl6XDAsc_VwIqewlPLzfhZ9aMistHRd_wkxrQXmTqaqBLTYW-e38VHrntTnHIixU1ClanZzHonv6RroVkr3GU0Jw3UuFb6SQIuKamSloCVWRuWzjta3COlqPjYcBKuA9GJB1YuWonEK9Jk22zSIcDLwvSV13xMB9qKnjHDnZZOicjRq8TrIsYDb29o7KqXsBW9zenpmw7usmImtIf89tR_SWxUei4XCI')">
+</div>
+<!-- Gradient Scrim overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent flex flex-col justify-end p-space-md md:p-space-xl">
+<div class="flex flex-col gap-space-md max-w-4xl">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container/50 text-secondary font-label-caps text-label-caps uppercase">FEATURED TIMEPIECE</span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-highest text-primary-fixed font-label-caps text-label-caps uppercase">3,400 ASSEMBLED PARTS</span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps uppercase">8K UDIM ASSETS</span>
+</div>
+<h2 class="font-display-hero text-display-hero text-on-surface uppercase leading-none tracking-tighter">
+            CHRONOS METALLIC
+          </h2>
+<p class="font-headline-sm text-headline-sm text-primary-fixed-dim uppercase tracking-wider -mt-space-xs">
+            Kinetic Luxury Timepiece Atelier
+          </p>
+</div>
+</div>
+</div>
+<!-- Metadata Floating Pill Tray -->
+<div class="w-full mt-space-md bg-surface-container-low/90 backdrop-blur-xl rounded-xl p-space-md shadow-xl grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Client / 委託方</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Independent Art Direction</span>
+<span class="font-label-mono text-label-mono text-outline">Self-Initiated R&amp;D</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Role / 執掌範疇</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">3D Modeling &amp; Shading</span>
+<span class="font-label-mono text-label-mono text-outline">Kinetic Rigging &amp; Lighting</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Timeline / 年度</span>
+<span class="font-headline-sm text-headline-sm text-primary">2024 / Q1 - Q3</span>
+<span class="font-label-mono text-label-mono text-outline">8-Month Incubation</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Discipline / 項目領域</span>
+<span class="font-headline-sm text-headline-sm text-secondary">3D Art &amp; Motion CGI</span>
+<span class="font-label-mono text-label-mono text-outline">Virtual Horology</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Overview & Introduction -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl bg-surface-container-low/40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase">01 // PRELUDE</span>
+<span class="w-6 h-px bg-surface-container-highest"></span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          PROJECT OVERVIEW &amp; INCEPTION
+        </h3>
+<p class="font-label-mono text-label-mono text-on-surface-variant">
+          探索虛擬空間中的超寫實機械微型時計學。
+        </p>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<p class="font-body-xl text-body-xl text-on-surface leading-relaxed">
+          Chronos Metallic is an exhaustive study into virtual haute horlogerie. The creative imperative was to translate the micro-tolerances, physical weight, and light transmission of grand astronomical timepieces into an uncompromised virtual manifestation.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Traditional watch visualization often abstracts microscopic engineering to optimize rendering budgets. In this production, every pinion, escapement lever, balance spring, and anti-reflective synthetic sapphire crystal facet was engineered to 0.001mm tolerance. By cross-examining bespoke celestial orbits and the stark geometry of high-tech aero-metals, the result exists at the junction of high-precision computational mechanics and visceral kinetic sculpture.
+        </p>
+<!-- Quick Insight Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-md">
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">TOLERANCE PRECISION</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">0.001<span class="text-primary-fixed-dim text-headline-sm">mm</span></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Micron-accurate CAD alignments</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">POLYGON DENSITY</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">18.4<span class="text-secondary text-headline-sm">M</span></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Non-destructive Sub-D geometry</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">RENDER ENGINE</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">Octane<span class="text-primary-fixed-dim text-headline-sm">X</span></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Spectral Path-Tracing with Thin-Film</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Concept & Moodboard -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase">02 // INSPIRATION ARCHIVE</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase mt-space-xs">
+            CONCEPT PHILOSOPHY &amp; MOODBOARD
+          </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Symbiosis of 17th-century astronomical armillary spheres and dark titanium hypercar monocoques.
+        </p>
+</div>
+<!-- Asymmetric Moodboard Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Main Feature Mood Tile -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl overflow-hidden shadow-lg relative min-h-[380px] group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Detailed macro view of an intricate antique astronomical clockwork mechanism forged from blackened titanium and gold leaf accents in dramatic moody volumetric shaft lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-zBQdDSX4FjX9IN4IAbpwD24nI_cUPv8OUL2iVd1l-1_ntWQ074u6YxCal46ROb4UXFbCZimKmslpXYF4bci9aRZi4jCN2MkGn4ut9VSTGoihO_AMEM2Z_kRoutTWJapqXoYKdd6gU5gkRAlIwMrkKkL_DwefQhA9fyb8qSf3DyjOp2gPj3LQenY3zvXdbYsK4Ma1lFhR2paOfQKi6ckNh6R3zKDRhAHvnCs87p4')">
+</div>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent">
+<span class="font-label-caps text-label-caps text-primary uppercase">REF. 01 // CELESTIAL HOROLOGY</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Astronomical Armillary Core</h4>
+</div>
+</div>
+<!-- Secondary Mood Tiles -->
+<div class="md:col-span-5 grid grid-rows-2 gap-space-md">
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg relative min-h-[180px] group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Microscopic texture of dark sandblasted aerospace grade-5 titanium with laser micro-engraved coordinate typography and specular blue light highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMbCxNrhNXZMVvVpRqvpoWYXvtQRJIKKV_Y1Sr95HD6YZLZb-At4jMkwyVY0c0z0YJPmkyPDNX12omvosXeaNrdUcgnEJxrOqWw1x-e5Z1Z6ljAuqwRoeH6I6g91wkY1uvtNgXpNydmTq450_yPhOhSFzYLNkIAdiOPdzpujWX4KDs9MykY75-YfKlz-RnUq6s5Hlkk5jzv5nENFese8B5A1iZT7cqfeMAUNobtL0')">
+</div>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-lowest to-transparent">
+<span class="font-label-caps text-label-caps text-secondary uppercase">REF. 02 // AEROSPACE TITANIUM</span>
+<p class="font-label-mono text-label-mono text-on-surface">Grade-5 Specular Roughness</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg relative min-h-[180px] group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Prismatic caustics and double refraction passing through a thick cut sapphire crystal slab casting vibrant cyan and violet light refractions onto obsidian slate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeEyYkxDGvNPO-t6l5ZnXawyBWb6aweJ7e83vT8lInu-KlyRPma1KPxWrtcGLYXym638MEOYvZRCOvyGStjvWmHaMwBCeQuvnbbGNlEfCEsvQ9mb4RcEQjKQglKs4QqSacUy7vHhK5Dh7ZPkzhrQ54v0d5mmfV4dImfjYQXCmaLsGKNsmmFWvniU8MK0-wnSyJNQIxI7KfSCcJByvoyQJ1V7l19xU7KS1HyXNZZls')">
+</div>
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-surface-container-lowest to-transparent">
+<span class="font-label-caps text-label-caps text-primary uppercase">REF. 03 // SAPPHIRE CAUSTICS</span>
+<p class="font-label-mono text-label-mono text-on-surface">Thin-Film Optical Dispersion</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Visual Research & Micro Reference -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl bg-surface-container-lowest">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary-fixed-dim uppercase">03 // MATERIAL SCIENCE</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          VISUAL RESEARCH &amp; MICRO-SPECULARITY
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Empirical testing of micro-faceted finishes, anisotropic brush paths, and high-frequency tactile engraving.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Research Card 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col gap-space-md">
+<div class="h-48 rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Extreme macro photographic render of radial anisotropic brushed steel watch bezel showing light streaks spinning like a phonograph disc." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLgMUADSjw44-qaCdpGADgNNzCp_ZvO0fmsR5HUoRvoA5ormwGmNC1YgFw6oXEphMpLwhRFGwIztlqxdRFcevFtVGdoeEtkyzfRvQY4pR6fg-u4OrZAhaZR-vehWIHVF7kuyUvSCcYxN_vDgW-1X3P2gXoEIxMigwHQLUOmGdPgo-QD_qpc6xi9OcidT6NMehNShNtl1SqB7704LfuCmordeiK-r03NSy-zQUn2HA')">
+</div>
+<span class="absolute top-space-xs right-space-xs bg-surface-container-lowest/80 px-space-xs py-0.5 rounded font-label-mono text-label-mono text-primary">MAP: ANISO_DIR_08</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">STUDY A</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Radial Anisotropic Brushing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Simulating continuous mechanical lathe abrasions. Tangent orientation maps dictate elliptical specular stretch along concentric gear paths.
+            </p>
+</div>
+</div>
+<!-- Research Card 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col gap-space-md">
+<div class="h-48 rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Sub-micron laser engraving typography on dark diamond-like carbon metal surface with ultra sharp recessed bevels and razor crisp edges." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBzAf1klOuUQQoQIMSyYl9VT2b7Bi8czruy5E6h8YYGZKiVlMofQc7NQanGcKzzbpmm-u-MupLnJ-qpf0XmQFVPgbDR9aX6dExJbK1rU26urqmggR0g3BaGoAWErfN5Ho1cVJ7Wvg9Q3Ut-bAjzm89MvC4s5T0lDiAujJFOCcv2TTUKrLaVI6dJOoKd0A-8DkKSCB2FUnKLHCsCJ4aVMVDbftAG5yz_8Z0pBBx5xo')">
+</div>
+<span class="absolute top-space-xs right-space-xs bg-surface-container-lowest/80 px-space-xs py-0.5 rounded font-label-mono text-label-mono text-secondary">DISP: 32-BIT EXR</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">STUDY B</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Sub-Micron Laser Etching</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sub-millimeter indices etched into DLC (Diamond-Like Carbon) coatings using customized floating-point 32-bit vector displacement fields.
+            </p>
+</div>
+</div>
+<!-- Research Card 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col gap-space-md">
+<div class="h-48 rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Complex glass refraction caustics focused through an anti-reflective double-domed sapphire crystal displaying faint violet and turquoise ghosting reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBs0ibRvRVXOCWOBGRgRjgbY0GUceXXZxwOsqXBDQBmFsfjKagNZnJzhQgIlhD0p0weYWwC2NEMat5dQrIDWX3aJYfiyj3BAjvKCbwrUPs_M0d9xpDZEnnPfCsFJVHrHLtyPwyGAI98M_ymQvQVblDUHTiUATIG0gAfu1XqCw2N37pOl-bEfneQcvNeYxHkGADenxLvEKEFelQ1IjnvkohTtqemW_aqmcij-jod7i8')">
+</div>
+<span class="absolute top-space-xs right-space-xs bg-surface-container-lowest/80 px-space-xs py-0.5 rounded font-label-mono text-label-mono text-primary">IOR: 1.770 SAPPHIRE</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">STUDY C</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Sapphire Caustic Refraction</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Index of refraction calibrated to synthetic corundum (1.770) combined with a dual-sided thin-film nanometer anti-reflective interference shader.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Process & Development Breakdown -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl">
+<div class="flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase">04 // PRODUCTION PIPELINE</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          PROCESS &amp; DEVELOPMENT STAGES
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Comprehensive four-phase technical progression from foundational CAD topology to spectral illumination.
+        </p>
+</div>
+<!-- Step-by-Step Rows -->
+<div class="flex flex-col gap-space-lg">
+<!-- Stage 01 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center shadow-lg">
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="font-label-mono text-label-mono text-primary">STAGE 01 / TOPOLOGY FOUNDATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">Draft &amp; Wireframe Blueprints</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Constructed strictly with pure quad geometry. Initial technical blueprints were drafted according to ISO horological standards to guarantee that gear ratios and intermeshing tooth pitches translate with mechanical fidelity.
+            </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>100% Manifold Quads, Zero N-gons</span>
+</div>
+</div>
+<div class="lg:col-span-7 h-64 md:h-80 rounded-lg overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center" data-alt="Technical 3D wireframe mesh of intricate watch movements, balance wheels, and chassis displayed in cyan neon vector lines over a dark navy blueprint grid." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDi902xBpDPyqrHvpdi-5i9w3G7hZW15aQ_EpoHgYia7R1aU3_Fv1WgxsV_luyu8rtF4kRXVeuH4jv4mfkrTHgBAIRnisjIoiooJ7OMGVO4T8GdPerTArSAcTZA0ioyuWcXsOU25SbQnugNLfBPHb6j4PjBulV_dG6huDB6UPKXt4sR0PWptvmwgd-c7Hanacae23U1kEnF_ZrKwFt-PDOB9Kmw2P_dQsQ55pb32AY')">
+</div>
+</div>
+</div>
+<!-- Stage 02 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center shadow-lg">
+<div class="lg:col-span-7 h-64 md:h-80 rounded-lg overflow-hidden bg-surface-container-highest order-2 lg:order-1">
+<div class="w-full h-full bg-cover bg-center" data-alt="Exploded parts view of luxury watch casing showing 3,400 precision components floating in zero gravity against a dark slate background with technical leader lines." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-vS5yIUoP9uBjz-G9S9NkfmtyC_isyU7UDDwXdEeMPkw-gT0kb3nCTVJBpdtebKo9R5qdAEb9PBzhI8jh2BcU0drLMHJAU_e0XxylwR09cOk8AnPj1D0dJ90WrSMWJMcNQUd8VPRTE8P8tM_tn6iCXhg7oAQTFPaIceKpRjp-T_U8mU2yQlCTLIRqSDXYJnQFs4g1CCjKUhPSy-9eV6_xy6nm5clzE6hITFDTDys')">
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-sm order-1 lg:order-2">
+<span class="font-label-mono text-label-mono text-secondary">STAGE 02 / MECHANICAL FABRICATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">Sub-D Modeling &amp; Assembly</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Every screw thread, jewel bearing socket, and bevel was modeled in high-resolution subdivision surfaces. The master assembly comprises 3,400 individual mechanical instances connected through dynamic constraint rigs.
+            </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-secondary text-base">layers</span>
+<span>Dynamic Kinematic Constraints &amp; Gearing Rigs</span>
+</div>
+</div>
+</div>
+<!-- Stage 03 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center shadow-lg">
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="font-label-mono text-label-mono text-primary">STAGE 03 / PROCEDURAL SHADING</span>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">Custom PBR Textures &amp; UDIM Maps</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Authored across 42 distinct 8K UDIM tiles in Substance 3D Painter. Procedural dust micro-scratches, fingerprint grease layers, and hand-rubbed edge wear were carefully modulated to evoke authentic haute horlogerie craft.
+            </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-primary text-base">palette</span>
+<span>42x 8K UDIM Sets in 32-bit Float</span>
+</div>
+</div>
+<div class="lg:col-span-7 h-64 md:h-80 rounded-lg overflow-hidden bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center" data-alt="Node graph view and procedural material generation view showing layered roughness textures and iridescent coating maps for high end titanium watch." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASE25CnjhCuLjRQi1kCerac1Kuj7fHhJji4nBibYYlbdDLy-QgrXXvjHAIi2ZZ3k_mb27iJ9kC5T5ebikgmFPxZMrY9z_suwMndL9HNPFn1z_QS-fpnKrH_cBNQEaTe8nSKkJQvYShGlCI4DtJ9p5ga2HOdX87rQJ1shqBRhCqC3g12enbkCGVFgdipvVm-94ZTOoAcFvm_BOBgnSqLQzKd07GoHMdsyDoyCjASFc')">
+</div>
+</div>
+</div>
+<!-- Stage 04 -->
+<div class="bg-surface-container-low rounded-xl p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center shadow-lg">
+<div class="lg:col-span-7 h-64 md:h-80 rounded-lg overflow-hidden bg-surface-container-highest order-2 lg:order-1">
+<div class="w-full h-full bg-cover bg-center" data-alt="3D Octane render studio lighting viewport showing softbox emitters, rim lights, black flags, and volumetric laser shafts illuminating a luxury timepiece on a pedestal." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7okIGxJgh3DDIetGlKlWb_nMA1G2Ambb0IyKlxcQPlte3tXSO3qJNY8k4JiLyD-wVKkZdefM0gYym4FrVXOWgSmA1cvEmdKEJxdfjWNFM_Q0vZ3C_aGXa0jw1aEJ-tG-Le0fybWG8wJkj-NU9lYTQ2Mf6uGILCE2bkfcsokXWwrFtNJHOc4zfgNs_7ZgXLW325z_68Mm7RDlDYka-ZZpU2MJlOA_xPkPc-IP9hXo')">
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-sm order-1 lg:order-2">
+<span class="font-label-mono text-label-mono text-secondary">STAGE 04 / SPECTRAL COMPOSITING</span>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">Octane Studio Lighting &amp; Volumetrics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              A bespoke virtual studio was assembled using 7 isolated mesh emitters, customized HDRI soft-boxes with true gradient falls, and micro-particulate atmospheric scattering to create cinematic depth and edge definition.
+            </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-secondary text-base">wb_iridescent</span>
+<span>Spectral Path-Tracing with 16,000 Max Samples</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Interactive 2D Before / After Comparison Slider -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl bg-surface-container-low/60">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase">05 // INTERACTIVE INSPECTION</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase mt-space-xs">
+            WIREFRAME CLAY VS. FINAL RAYTRACED SHADER
+          </h3>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-primary-fixed-dim text-sm">swipe</span>
+<span>DRAG SLIDER HORIZONTALLY TO COMPARE</span>
+</div>
+</div>
+<!-- Comparison Slider Component -->
+<div class="relative w-full h-[520px] rounded-xl overflow-hidden shadow-2xl select-none bg-surface-container-lowest" id="comparison-container">
+<!-- Background Layer: Final Rendered Image -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="Hyper-realistic final macro render of luxury watch showing deep black titanium, glowing cyan dial details, intricate escapement mechanism, and pristine glass reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAznH5aZTU3Y4b8fafD1HCt5Kjk41qsEWS2G3LTltW1szNwg7S8ZzCEiSwqW_NDAWdmPhL8fWBu_lHmz_-xZr4HH9x7bJM-ECy5WNLB1BOuyA5b9w-g8ux4CfTs9jUQeaSywMoRAvip5kjfccYVSpCuSIwSdzWv-eoD8IwmGJhkmQ04TUByUUl3FVAke4uh2_JqXWTR9_2ZlCFIJNAsllHN974Kivvc3xXWteDNraU')">
+<div class="absolute top-space-md right-space-md bg-surface-container-lowest/80 px-space-md py-space-xs rounded-full font-label-caps text-label-caps text-primary shadow-md">
+            FINAL RAYTRACED (OCTANE X)
+          </div>
+</div>
+<!-- Foreground Layer (Clipped): Wireframe Clay Render -->
+<div class="absolute inset-0 w-1/2 h-full overflow-hidden border-r-0" id="before-layer" style="width: 50%;">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center min-w-full" data-alt="Monochrome ambient occlusion clay render of the exact same luxury watch with visible wireframe tessellation lines across all mechanical bevels." id="before-image-inner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWhFDM8SlXKXMTmSGpooQq9f019cfOxzBJYsiXbOe6K8ZKmRNMrI2if0_JZeePtcHGx637me0DC1tGocNHgZilR9q_9AMfKYzqFsEfQnOpP2jHMXZTSlNRLw1zt5RUplsBwpp6ENYk3hRT_LAeyPwYm3NclPEBT-M-YD_2UjUC0cH2nO2KMLdLm7JBwQVpPmsxFC-12DrK4eSkqA3osKiT6CVBsEY5Y7XiT5BkYSs')">
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 px-space-md py-space-xs rounded-full font-label-caps text-label-caps text-secondary shadow-md">
+              WIREFRAME CLAY TOPOLOGY
+            </div>
+</div>
+</div>
+<!-- Draggable Handle Bar -->
+<div class="absolute top-0 bottom-0 w-1 bg-primary cursor-ew-resize flex items-center justify-center -ml-0.5 shadow-[0_0_16px_rgba(0,240,255,0.6)]" id="slider-divider" style="left: 50%;">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+<span class="material-symbols-outlined text-sm font-bold">drag_handle</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Bar -->
+<div class="w-full bg-surface-container-high p-space-sm rounded-lg flex flex-wrap items-center justify-between gap-space-sm font-label-mono text-label-mono text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span>GEOMETRY: <strong>SUB-D QUAD MESH</strong></span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>SAMPLES: <strong>16,384 SPP</strong></span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>DENOISER: <strong>OCTANE SPECTRAL AI</strong></span>
+</div>
+<div class="text-primary font-bold">
+          CONVERGENCE: 99.89%
+        </div>
+</div>
+</div>
+</section>
+<!-- Section 7: 3D Model GLB / GLTF Interactive Viewport -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase">06 // SPATIAL ASSET VIEWPORT</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase mt-space-xs">
+            GLB / GLTF 3D REAL-TIME INSPECTION
+          </h3>
+</div>
+<span class="px-space-md py-space-xs rounded-full bg-primary-container/20 text-primary-fixed-dim font-label-caps text-label-caps uppercase self-start md:self-auto">
+          WEBGL 2.0 / PBR ENGINE ACTIVE
+        </span>
+</div>
+<!-- 3D Canvas Mockup Viewport Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl relative flex flex-col min-h-[580px]" id="viewport-3d-box">
+<!-- Top HUD Telemetry Ribbon -->
+<div class="w-full bg-surface-container-low/90 backdrop-blur-md px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono z-20">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="text-on-surface font-bold uppercase">VIEWPORT: PERSPECTIVE (50MM)</span>
+<span class="text-outline">|</span>
+<span>FPS: <strong class="text-primary" id="fps-counter">60.0</strong></span>
+<span class="text-outline">|</span>
+<span>VERTS: <strong>1,842,910</strong></span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">SHADING: PBR METALLIC-ROUGH</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">AA: FXAA 4X</span>
+</div>
+</div>
+<!-- Central Interactive Canvas Stage with 3D model graphic -->
+<div class="relative flex-1 w-full min-h-[460px] flex items-center justify-center overflow-hidden cursor-grab active:cursor-grabbing" id="turntable-stage">
+<div class="w-full h-full bg-contain bg-no-repeat bg-center transition-transform duration-300" data-alt="Center isolated 3D digital model of an ultra modern openworked tourbillon watch floating against pure dark obsidian backdrop with dynamic rotation axis rings and spatial bounding markers." id="turntable-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2rtw8xDlSJzyMKOCYNa2RtO33IOL5oSpKjMdCK9NDC6ytZpq2I42Tdl2agKg1OIfQ6xdfcqvF2pDShb74MkbXsanLo3hngfvtrHZYEV4uJLQLcuJJJ3-D62qBFEAoXNen_O9MtusyucqgCofv2Ku7V72hrE1lIC8cuGx5zBpBozD0v_hS77ptk5NtqQ5lGD_xQoYVhoVMSxMCF_i1WlAHiCLTmdP3RnicEETAe_w')">
+</div>
+<!-- WebGL Spatial Grid Overlay (Inline SVG Grid) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid-pattern" patternunits="userSpaceOnUse" width="40">
+<path class="text-outline" d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+<circle class="text-primary/40" cx="50%" cy="50%" fill="none" r="180" stroke="currentColor" stroke-dasharray="4,6" stroke-width="1"></circle>
+<circle class="text-secondary/30" cx="50%" cy="50%" fill="none" r="240" stroke="currentColor" stroke-dasharray="2,8" stroke-width="0.75"></circle>
+</svg>
+<!-- Hotspot Annotation 1 -->
+<div class="absolute top-[38%] left-[45%] flex items-center gap-space-xs group pointer-events-auto cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-[10px] font-bold shadow-[0_0_12px_rgba(0,240,255,0.8)]">1</div>
+<div class="bg-surface-container-highest/90 backdrop-blur-md px-space-sm py-space-xs rounded text-on-surface font-label-mono text-label-mono shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+              Flying Tourbillon Cage (Grade 5 Ti)
+            </div>
+</div>
+<!-- Hotspot Annotation 2 -->
+<div class="absolute bottom-[35%] right-[38%] flex items-center gap-space-xs group pointer-events-auto cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-secondary-container text-secondary flex items-center justify-center text-[10px] font-bold shadow-[0_0_12px_rgba(220,184,255,0.8)]">2</div>
+<div class="bg-surface-container-highest/90 backdrop-blur-md px-space-sm py-space-xs rounded text-on-surface font-label-mono text-label-mono shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+              Sapphire Planetary Ring Gear
+            </div>
+</div>
+</div>
+<!-- Floating Viewport Controls Toolbar -->
+<div class="absolute bottom-space-md left-1/2 -translate-x-1/2 bg-surface-container-high/90 backdrop-blur-xl px-space-md py-space-xs rounded-full shadow-2xl flex items-center gap-space-sm z-30">
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container transition-colors text-on-surface font-label-caps text-label-caps" id="btn-rotate-toggle" title="Toggle Auto-Orbit">
+<span class="material-symbols-outlined text-sm">360</span>
+<span id="rotate-label">AUTO-ORBIT: ON</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-highest hover:bg-secondary-container hover:text-on-secondary-container transition-colors text-on-surface font-label-caps text-label-caps" id="btn-wireframe-toggle" title="Toggle Wireframe Mode">
+<span class="material-symbols-outlined text-sm">grid_4x4</span>
+<span>WIREFRAME</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" id="btn-zoom-in" title="Zoom In">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" id="btn-zoom-out" title="Zoom Out">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" id="btn-reset-cam" title="Reset View">
+<span class="material-symbols-outlined text-sm">restart_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Tools & Software Stack -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl bg-surface-container-low/40">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-secondary uppercase">07 // DIGITAL ARSENAL</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          TOOLS &amp; SOFTWARE ARCHITECTURE
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Multi-software interop pipeline orchestrated through OpenUSD and ACEScg color-managed environments.
+        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-md">
+<!-- Tool 1: Blender -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm shadow-md hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">category</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Blender 4.2</span>
+<span class="font-label-caps text-label-caps text-primary uppercase mt-space-xs">GEOMETRY CAD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Sub-D topology &amp; micro-mechanical gearing constraints.</span>
+</div>
+</div>
+<!-- Tool 2: Cinema 4D -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm shadow-md hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">motion_photos_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cinema 4D</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-space-xs">RIG &amp; MOGRAPH</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Procedural kinetic linkages and camera choreography.</span>
+</div>
+</div>
+<!-- Tool 3: Octane Render -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm shadow-md hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">filter_tilt_shift</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Octane X</span>
+<span class="font-label-caps text-label-caps text-primary uppercase mt-space-xs">SPECTRAL RENDER</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Unbiased GPU raytracing with thin-film dispersion shaders.</span>
+</div>
+</div>
+<!-- Tool 4: Substance 3D Painter -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm shadow-md hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">texture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Substance 3D</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-space-xs">PBR TEXTURING</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Multi-tile UDIM authoring and custom anisotropic maps.</span>
+</div>
+</div>
+<!-- Tool 5: DaVinci Resolve -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm shadow-md hover:bg-surface-container-high transition-colors group col-span-2 md:col-span-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">movie_filter</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Resolve Studio</span>
+<span class="font-label-caps text-label-caps text-tertiary uppercase mt-space-xs">ACEScg COLOR</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">32-bit floating point grading, glow diffusion &amp; optics.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Reflection, Milestones & Awards -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Takeaways & Reflection -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<span class="font-label-mono text-label-mono text-primary uppercase">08 // POST-MORTEM &amp; KEY TAKEAWAYS</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          TECHNICAL OUTCOMES &amp; REFLECTION
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          The major breakthrough on Chronos Metallic was solving micro-facet noise in deep reflections without aggressive AI blurring that destroys hair-thin chamfers. By designing a custom importance-sampling shader for brushed anisotropic metals, render times per 4K frame dropped by 44% while preserving specular crispness.
+        </p>
+<!-- Bullet Highlights -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<span class="material-symbols-outlined text-primary text-xl">speed</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Rendering Optimization Benchmark</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reduced memory consumption from 26GB to 14.2GB VRAM via aggressive instance grouping and custom mesh compression.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<span class="material-symbols-outlined text-secondary text-xl">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Horological Authenticity</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consulted with Swiss master watchmakers to guarantee escapement tooth ratios and inertia wheel balance match real-world chronometer standards.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Recognition & Accolades -->
+<div class="lg:col-span-5 flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-xl shadow-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">military_tech</span>
+<span class="font-label-mono text-label-mono text-primary uppercase">CURATED HONORS</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">
+          INTERNATIONAL RECOGNITION
+        </h4>
+<div class="flex flex-col divide-y divide-surface-container-highest">
+<div class="py-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Behance Curated</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Motion Graphics &amp; 3D Modeling Editorial</span>
+</div>
+<span class="px-space-sm py-space-xs rounded bg-primary-container/20 text-primary-fixed-dim font-label-caps text-label-caps">2024</span>
+</div>
+<div class="py-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">ArtStation Trending #1</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Global 3D Hard-Surface Category</span>
+</div>
+<span class="px-space-sm py-space-xs rounded bg-secondary-container/40 text-secondary font-label-caps text-label-caps">WEEK 34</span>
+</div>
+<div class="py-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Render Weekly Feature</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Grand Master Challenge Winner</span>
+</div>
+<span class="px-space-sm py-space-xs rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps">WINNER</span>
+</div>
+</div>
+<div class="mt-auto pt-space-md">
+<a class="w-full py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-space-xs text-on-surface font-label-mono text-label-mono uppercase shadow-sm" href="#">
+<span class="material-symbols-outlined text-primary text-sm">open_in_new</span>
+<span>View Full Press Coverage Kit</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: Next & Previous Project Navigation Footer -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl bg-surface-container-lowest">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">CYCLE PORTFOLIO ARCHIVE</span>
+<a class="font-label-caps text-label-caps text-primary hover:underline uppercase flex items-center gap-space-xs" href="#">
+<span>All Case Studies</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Previous Project Card -->
+<a class="group relative rounded-xl overflow-hidden bg-surface-container-low p-space-lg shadow-lg flex flex-col justify-between min-h-[220px] transition-all duration-300 hover:bg-surface-container-high" href="#">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-space-xs text-primary group-hover:-translate-x-1 transition-transform">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+<span>PREVIOUS PROJECT // 03</span>
+</span>
+<span class="font-label-caps text-label-caps uppercase text-outline">CYBERNETICS</span>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-md">
+<h4 class="font-headline-lg text-headline-lg text-on-surface uppercase group-hover:text-primary transition-colors">
+              NEO-TOKYO 2099
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Atmospheric Cyberpunk Megacity World-Building &amp; Procedural Architecture.
+            </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs font-label-caps text-label-caps text-outline group-hover:text-on-surface uppercase">
+<span>EXPLORE PROCESS</span>
+<span class="w-8 h-px bg-surface-container-highest group-hover:w-12 transition-all"></span>
+</div>
+</a>
+<!-- Next Project Card -->
+<a class="group relative rounded-xl overflow-hidden bg-surface-container-low p-space-lg shadow-lg flex flex-col justify-between min-h-[220px] transition-all duration-300 hover:bg-surface-container-high" href="#">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="font-label-caps text-label-caps uppercase text-outline">NEURO-VISUAL ART</span>
+<span class="flex items-center gap-space-xs text-secondary group-hover:translate-x-1 transition-transform">
+<span>NEXT PROJECT // 05</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-md">
+<h4 class="font-headline-lg text-headline-lg text-on-surface uppercase group-hover:text-secondary transition-colors">
+              SYNAPSE ECHOES
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bio-Mechanical Synaptic Data Visuals &amp; Audio-Reactive Generative Canvas.
+            </p>
+</div>
+<div class="mt-space-md flex items-center justify-end gap-space-xs font-label-caps text-label-caps text-outline group-hover:text-on-surface uppercase">
+<span class="w-8 h-px bg-surface-container-highest group-hover:w-12 transition-all"></span>
+<span>EXPLORE PROCESS</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Inline Script for Interactivity: Comparison Slider & 3D Viewport Controls -->
+<script>
+    (function initCaseStudyInteractions() {
+      // 1. Before/After Comparison Slider Logic
+      const container = document.getElementById('comparison-container');
+      const beforeLayer = document.getElementById('before-layer');
+      const divider = document.getElementById('slider-divider');
+      let isDragging = false;
+
+      function updateSliderPosition(clientX) {
+        if (!container) return;
+        const rect = container.getBoundingClientRect();
+        let offsetX = clientX - rect.left;
+        if (offsetX < 0) offsetX = 0;
+        if (offsetX > rect.width) offsetX = rect.width;
+        const percentage = (offsetX / rect.width) * 100;
+        
+        beforeLayer.style.width = percentage + '%';
+        divider.style.left = percentage + '%';
+      }
+
+      if (container && divider) {
+        divider.addEventListener('mousedown', () => isDragging = true);
+        window.addEventListener('mouseup', () => isDragging = false);
+        window.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          updateSliderPosition(e.clientX);
+        });
+
+        // Touch support
+        divider.addEventListener('touchstart', () => isDragging = true);
+        window.addEventListener('touchend', () => isDragging = false);
+        window.addEventListener('touchmove', (e) => {
+          if (!isDragging) return;
+          if (e.touches && e.touches[0]) {
+            updateSliderPosition(e.touches[0].clientX);
+          }
+        });
+      }
+
+      // 2. 3D Model Viewport Simulation
+      const stage = document.getElementById('turntable-stage');
+      const turntableImage = document.getElementById('turntable-image');
+      const btnRotate = document.getElementById('btn-rotate-toggle');
+      const rotateLabel = document.getElementById('rotate-label');
+      const btnWireframe = document.getElementById('btn-wireframe-toggle');
+      const btnZoomIn = document.getElementById('btn-zoom-in');
+      const btnZoomOut = document.getElementById('btn-zoom-out');
+      const btnReset = document.getElementById('btn-reset-cam');
+      const fpsEl = document.getElementById('fps-counter');
+
+      let currentScale = 1;
+      let rotationAngle = 0;
+      let isAutoRotating = true;
+      let isWireframeActive = false;
+      let animationFrameId = null;
+
+      function animateOrbit() {
+        if (isAutoRotating && turntableImage) {
+          rotationAngle = (rotationAngle + 0.25) % 360;
+          turntableImage.style.transform = `scale(${currentScale}) rotate(${rotationAngle}deg)`;
+        }
+        animationFrameId = requestAnimationFrame(animateOrbit);
+      }
+      animateOrbit();
+
+      // Dynamic FPS Jitter simulation for authentic real-time feel
+      setInterval(() => {
+        if (!fpsEl) return;
+        const jitter = (59.4 + Math.random() * 0.9).toFixed(1);
+        fpsEl.textContent = jitter;
+      }, 800);
+
+      // Controls handlers
+      if (btnRotate) {
+        btnRotate.addEventListener('click', () => {
+          isAutoRotating = !isAutoRotating;
+          rotateLabel.textContent = isAutoRotating ? 'AUTO-ORBIT: ON' : 'AUTO-ORBIT: PAUSED';
+          btnRotate.classList.toggle('text-primary', isAutoRotating);
+        });
+      }
+
+      if (btnWireframe && turntableImage) {
+        btnWireframe.addEventListener('click', () => {
+          isWireframeActive = !isWireframeActive;
+          btnWireframe.classList.toggle('bg-secondary-container', isWireframeActive);
+          btnWireframe.classList.toggle('text-on-secondary-container', isWireframeActive);
+          turntableImage.style.filter = isWireframeActive ? 'invert(1) hue-rotate(180deg) contrast(150%)' : 'none';
+        });
+      }
+
+      if (btnZoomIn && turntableImage) {
+        btnZoomIn.addEventListener('click', () => {
+          currentScale = Math.min(currentScale + 0.15, 2.2);
+          turntableImage.style.transform = `scale(${currentScale}) rotate(${rotationAngle}deg)`;
+        });
+      }
+
+      if (btnZoomOut && turntableImage) {
+        btnZoomOut.addEventListener('click', () => {
+          currentScale = Math.max(currentScale - 0.15, 0.7);
+          turntableImage.style.transform = `scale(${currentScale}) rotate(${rotationAngle}deg)`;
+        });
+      }
+
+      if (btnReset && turntableImage) {
+        btnReset.addEventListener('click', () => {
+          currentScale = 1;
+          rotationAngle = 0;
+          turntableImage.style.transform = `scale(1) rotate(0deg)`;
+        });
+      }
+
+      // Manual drag rotation simulation
+      let isCanvasDragging = false;
+      let startX = 0;
+
+      if (stage) {
+        stage.addEventListener('mousedown', (e) => {
+          isCanvasDragging = true;
+          startX = e.clientX;
+          isAutoRotating = false;
+          if (rotateLabel) rotateLabel.textContent = 'AUTO-ORBIT: PAUSED';
+        });
+
+        window.addEventListener('mouseup', () => {
+          isCanvasDragging = false;
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          if (!isCanvasDragging || !turntableImage) return;
+          const deltaX = e.clientX - startX;
+          startX = e.clientX;
+          rotationAngle = (rotationAngle + deltaX * 0.5) % 360;
+          turntableImage.style.transform = `scale(${currentScale}) rotate(${rotationAngle}deg)`;
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.3)]"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface uppercase">Kaizen Studio</span><p class="font-label-mono text-label-mono text-on-surface-variant">© 2024 Kaizen Studio. All digital assets &amp; 3D entities reserved.</p></div><div class="flex items-center gap-space-lg"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Instagram</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Behance</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">ArtStation</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">LinkedIn</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">GitHub</a></div></div></footer></body></html>

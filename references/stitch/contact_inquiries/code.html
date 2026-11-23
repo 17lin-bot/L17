@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#353437","surface-container":"#201f21","on-secondary-container":"#dcb7ff","background":"#131315","primary-fixed-dim":"#00dbe9","outline":"#849495","tertiary":"#f4f5f7","on-primary-fixed":"#002022","on-tertiary":"#2e3132","surface":"#131315","on-secondary":"#480081","surface-container-low":"#1c1b1d","on-primary":"#00363a","primary-fixed":"#7df4ff","on-surface-variant":"#b9cacb","error-container":"#93000a","secondary":"#dcb8ff","secondary-fixed-dim":"#dcb8ff","on-secondary-fixed-variant":"#6700b5","on-primary-fixed-variant":"#004f54","surface-tint":"#00dbe9","on-tertiary-fixed":"#191c1e","tertiary-fixed-dim":"#c5c6c8","surface-bright":"#39393b","on-tertiary-container":"#5c5f61","surface-container-high":"#2a2a2c","surface-variant":"#353437","tertiary-container":"#d8d9db","error":"#ffb4ab","inverse-primary":"#006970","inverse-surface":"#e5e1e4","on-secondary-fixed":"#2c0051","secondary-container":"#7701d0","on-error":"#690005","inverse-on-surface":"#313032","surface-container-lowest":"#0e0e10","on-primary-container":"#006970","on-surface":"#e5e1e4","on-error-container":"#ffdad6","tertiary-fixed":"#e1e2e4","primary-container":"#00f0ff","on-background":"#e5e1e4","primary":"#dbfcff","outline-variant":"#3b494b","surface-dim":"#131315","on-tertiary-fixed-variant":"#444749","secondary-fixed":"#efdbff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"1.25rem","space-lg":"1.5rem","space-xs":"0.25rem","space-xl":"3rem","margin-desktop":"4rem","space-sm":"0.5rem","gutter-desktop":"2.5rem","space-md":"1rem","gutter":"1.5rem"},fontFamily:{"display-hero-mobile":["Syne"],"headline-sm":["Syne"],"label-mono":["Space Grotesk"],"headline-md":["Syne"],"body-md":["Space Grotesk"],"headline-xl-mobile":["Syne"],"body-xl":["Space Grotesk"],"headline-lg-mobile":["Syne"],"display-hero":["Syne"],"body-sm":["Space Grotesk"],"label-caps":["Space Grotesk"],"headline-xl":["Syne"],"headline-lg":["Syne"]},fontSize:{"display-hero-mobile":["44px",{"lineHeight":"50px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"600"}],"label-mono":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.015em","fontWeight":"400"}],"headline-xl-mobile":["34px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-xl":["18px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"display-hero":["80px",{"lineHeight":"88px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"600"}],"headline-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Kaizen Studio Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB_X7IowaSVZSkmTr-Rh4S4gmZOaUK-KZq1DiD5QsOoFUdn4dDxz572xw07CitdKC-Ev-FutvwRNqSwF8SC78iWZ2MRPAANVZScZOHB91iNycZmJQJL2O1AEG27SfqGjFoRjrjPbUFgx9Wq6jEBQPDQ2bca7ZSkSNjpwpV2hQerS5d_MItwVe26RjTxJUNQmYqdlVREgwQKxDIgJO7p3NrsPky9-NDKKikHxtBWJ3En"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">Kaizen Studio</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">2D / 3D Visual Atelier</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-surface-container-highest text-primary font-bold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.25)]"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="work" href="#">Work / 精選作品</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="case-studies" href="#">Case Studies / 案例</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="about" href="#">About / 關於</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="skills" href="#">Skills / 技能</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-surface-container-highest text-primary font-bold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.25)]" data-path="contact" href="#">Contact / 聯絡</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/40"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-secondary uppercase">AVAILABLE FOR COMMISSIONS</span></div><div class="h-8 w-px bg-surface-container-highest mx-space-xs hidden sm:block"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3jSKugiXvDx7jGflCPm9MAJLEEvLBhkGAnLiT3wa3-Esj8PWc99uwT5e3mAjML1AhWPyupb0g8OK2qzt9uFbkxGJWUuduF2vmgO00k-0RX_neukAmdFywJqXuDAegwSzYC3oIS4YS4Qpl6ZNjqLskGseMXc7i3nPXvN82wXLqU9tqTu7-4HOFzCil6mj4glsRwKw_MuDOhp7yQ5PJzM-dBV3ShLmV_BzzCmsaatE"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full relative">
+<!-- Ambient Telemetry & Atmospheric Backdrop Glows -->
+<div class="absolute top-10 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-80 right-10 w-[500px] h-[500px] bg-secondary-container/15 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+<!-- Hero Header & Statement Section -->
+<section class="w-full px-margin md:px-margin-desktop pt-10 pb-space-xl">
+<div class="flex flex-col gap-space-md max-w-5xl">
+<!-- Status Chip & Coordinates -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary-container/30 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Currently Accepting Q3/Q4 Commissions</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-base">public</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Taipei / Remote Worldwide • 25.0330° N, 121.5654° E</span>
+</div>
+</div>
+<!-- Main Glowing Gradient Title -->
+<h1 class="font-display-hero text-headline-xl md:text-display-hero text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-secondary uppercase tracking-tight selection:text-surface drop-shadow-[0_0_35px_rgba(0,240,255,0.2)]">
+        LET'S CREATE SOMETHING AMAZING.
+      </h1>
+<!-- Bilingual Subtitles -->
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<p class="font-body-xl text-body-xl text-on-surface font-light">
+          Have a project in mind? Let's work together and bring your ideas to life.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          歡迎各類品牌視覺合作、3D 專案委託、商業授權或概念藝術諮詢。從前置分鏡、次世代幾何建模至動態光影合成，打造極致感官沈浸。
+        </p>
+</div>
+</div>
+</section>
+<!-- Main Grid: Contact Cards / Channels vs. Interactive Form -->
+<section class="w-full px-margin md:px-margin-desktop pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: Direct Info, Social Network Matrix, Telemetry Deck (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Interactive Email Card with 1-Click Copy -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container-low shadow-xl overflow-hidden backdrop-blur-xl">
+<div class="absolute -right-8 -bottom-8 w-36 h-36 bg-primary-container/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Direct Inquiries / 直接來信</span>
+<span class="flex items-center gap-1 font-label-mono text-label-mono text-primary">
+<span class="material-symbols-outlined text-sm">bolt</span> PGP ENCRYPTED
+              </span>
+</div>
+<div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase block">Transmission Gateway</span>
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary-container transition-colors tracking-tight" href="mailto:contact@kaizenstudio.design" id="mail-link">
+                contact@kaizenstudio.design
+              </a>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface transition-all shadow-md group/btn cursor-pointer" id="copy-email-btn" type="button">
+<span class="material-symbols-outlined text-base group-hover/btn:rotate-12 transition-transform" id="copy-icon">content_copy</span>
+<span class="font-label-mono text-label-mono uppercase" id="copy-text">Copy Email Address</span>
+</button>
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all" href="mailto:contact@kaizenstudio.design?subject=Kaizen%20Studio%20Commission%20Inquiry">
+<span class="material-symbols-outlined text-base">open_in_new</span>
+<span class="font-label-mono text-label-mono uppercase">Mailto Client</span>
+</a>
+</div>
+<p class="hidden font-label-mono text-label-mono text-primary-container animate-fade-in flex items-center gap-1" id="copy-toast">
+<span class="material-symbols-outlined text-sm">verified</span> 已複製至剪貼簿！隨時貼上傳送。
+            </p>
+</div>
+</div>
+<!-- Social Channels & Repositories Matrix -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col gap-space-md backdrop-blur-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Social Channels &amp; Repositories</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">ACTIVE CHANNELS</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Instagram -->
+<a class="group flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-xl">camera</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Instagram</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">@kaizen.3dart</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- Behance -->
+<a class="group flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all" href="https://behance.net" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-xl">palette</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-secondary-fixed transition-colors">Behance</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">behance.net/kaizencreative</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- ArtStation -->
+<a class="group flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all" href="https://artstation.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-xl">view_in_ar</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">ArtStation</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">artstation.com/kaizen_artist</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- LinkedIn -->
+<a class="group flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-xl">work</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">LinkedIn</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">linkedin.com/in/kaizen-designer</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Studio Studio Spec Telemetry Deck -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col gap-space-sm backdrop-blur-xl">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Studio Telemetry</span>
+<span class="font-label-mono text-label-mono">ENGINE V4.2</span>
+</div>
+<!-- Inline Technical Specifications SVG Graph -->
+<div class="flex items-center justify-between py-space-xs text-on-surface">
+<span class="font-label-mono text-label-mono">Render Farms Capacity</span>
+<span class="font-label-mono text-label-mono text-primary">88.4% Available</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-secondary-container h-full w-[88%]"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-mono text-label-mono text-on-surface-variant">
+<div class="flex flex-col p-space-sm rounded bg-surface-container">
+<span class="text-on-surface">Octane / Unreal 5.4</span>
+<span class="text-primary-container">Raytracing Ready</span>
+</div>
+<div class="flex flex-col p-space-sm rounded bg-surface-container">
+<span class="text-on-surface">Response SLA</span>
+<span class="text-secondary">≤ 24h GMT+8</span>
+</div>
+</div>
+</div>
+<!-- Visual Atelier Mood Image Card -->
+<div class="relative rounded-xl overflow-hidden shadow-xl h-52 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end dark atmospheric creative studio desk in Taipei with dual curved monitors displaying high polygon 3D cybernetic wireframe meshes, cyan and violet neon rim lighting reflecting off metallic brushed titanium surfaces, architectural drafting sketches, and sleek glass desk accessories." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASLJiJPGTleVgiV3WjliJ-XxTb_2CHz-LiGAQoktX9Rw4ffPjWugb6xct3fB0ia6Y94ylN8m7EIPgRGakkQ1u8RjkXp03axT6d3-sMk83S3JdNyWGG9qRZGu4Y8o2ngQDceyrbo_0Kq06zhmgbSdjsl9fyWtIiKvkELxJwqthag8fFZpLyYjJS7cTHNYcZhwLw6LPa8JTuP1Zr7JEzqudV5UVe-dvLX2oAdXSBywY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-caps text-label-caps text-primary uppercase">Atelier HQ • Taipei Physical Lab</span>
+<span class="font-body-sm text-body-sm text-on-surface">Cross-disciplinary generative pipelines &amp; bespoke CGI engineering.</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Full Interactive Contact Form with Validation & Feedback (7 cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="p-space-lg md:p-space-xl rounded-xl bg-surface-container-low shadow-2xl relative flex flex-col gap-space-lg backdrop-blur-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Project Commission Dispatch</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">STEP 01 OF 01</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Initiate Project Dialogue / 委託諮詢表單
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              請填寫您的專案範疇與預期規格，我們將在一個工作日內提供時程規劃與估算報告。
+            </p>
+</div>
+<!-- Alert Banner / Toast Notification (Success / Error Container) -->
+<div class="hidden p-space-md rounded-lg flex items-start gap-space-md transition-all duration-300" id="form-alert">
+<span class="material-symbols-outlined text-2xl mt-0.5" id="alert-icon">info</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm" id="alert-title">訊息通知</span>
+<p class="font-body-sm text-body-sm" id="alert-message">訊息已成功發送！我們會於 24 小時內回覆。</p>
+</div>
+<button class="ml-auto text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('form-alert').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- The Form -->
+<form class="flex flex-col gap-space-md" id="contact-form" novalidate="">
+<!-- Anti-Spam Honeypot Field (Hidden from human view) -->
+<div aria-hidden="true" class="hidden">
+<label for="honeypot_field">Keep this field empty</label>
+<input autocomplete="off" id="honeypot_field" name="honeypot_field" tabindex="-1" type="text"/>
+</div>
+<!-- Field 1: Name (Required, Floating Label feel, Error states) -->
+<div class="flex flex-col gap-1 relative">
+<label class="font-label-mono text-label-mono text-on-surface uppercase flex justify-between" for="client_name">
+<span>01. Your Name / 委託人姓名 <span class="text-primary">*</span></span>
+<span class="text-on-surface-variant" id="name-status">REQUIRED</span>
+</label>
+<div class="relative">
+<input class="w-full px-space-md py-space-sm bg-surface-container rounded-lg text-on-surface font-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner" id="client_name" name="name" placeholder="e.g. Elena Rostova or Studio Nova Inc." required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-primary-container text-lg hidden" id="name-check">check_circle</span>
+</div>
+<span class="hidden font-label-mono text-label-mono text-error flex items-center gap-1 mt-1" id="name-error">
+<span class="material-symbols-outlined text-xs">error</span> 請輸入您的姓名或團隊名稱 (至少 2 個字元)。
+              </span>
+</div>
+<!-- Field 2: Email (Required, RFC validation, Feedback) -->
+<div class="flex flex-col gap-1 relative">
+<label class="font-label-mono text-label-mono text-on-surface uppercase flex justify-between" for="client_email">
+<span>02. Email Address / 電子郵件信箱 <span class="text-primary">*</span></span>
+<span class="text-on-surface-variant" id="email-status">RFC-5322 SPEC</span>
+</label>
+<div class="relative">
+<input class="w-full px-space-md py-space-sm bg-surface-container rounded-lg text-on-surface font-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner" id="client_email" name="email" placeholder="name@organization.com" required="" type="email"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-primary-container text-lg hidden" id="email-check">check_circle</span>
+</div>
+<span class="hidden font-label-mono text-label-mono text-error flex items-center gap-1 mt-1" id="email-error">
+<span class="material-symbols-outlined text-xs">error</span> 請輸入有效的電子郵件格式 (例如: client@domain.com)。
+              </span>
+</div>
+<!-- Field 3: Subject / Project Classification Selector -->
+<div class="flex flex-col gap-1 relative">
+<label class="font-label-mono text-label-mono text-on-surface uppercase flex justify-between" for="client_subject">
+<span>03. Subject &amp; Project Domain / 專案類型 <span class="text-primary">*</span></span>
+<span class="text-on-surface-variant">CLASSIFICATION</span>
+</label>
+<div class="relative">
+<select class="w-full px-space-md py-space-sm bg-surface-container rounded-lg text-on-surface font-body-md focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner appearance-none cursor-pointer" id="client_subject" name="subject" required="">
+<option disabled="" selected="" value="">Select Commission Type / 請選擇專案項目</option>
+<option value="3D Art &amp; CGI Visualization">3D Art &amp; Key Visual Direction (主視覺美術)</option>
+<option value="Commercial 3D Product Renders">Commercial Product Renders &amp; Motion (產品渲染動態)</option>
+<option value="Interactive WebGL &amp; Realtime">Interactive WebGL / Unreal Engine 5 Realtime 互動開發</option>
+<option value="2D Concept Design &amp; Matte Painting">2D Concept Art &amp; Worldbuilding (概念美術設計)</option>
+<option value="Commercial IP Licensing">Commercial IP Licensing &amp; Exhibition (商業展演授權)</option>
+<option value="Other Bespoke Collaboration">Other Bespoke Creative Inquiries (其他合作)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<span class="hidden font-label-mono text-label-mono text-error flex items-center gap-1 mt-1" id="subject-error">
+<span class="material-symbols-outlined text-xs">error</span> 請選擇最符合您委託需求的專案類型。
+              </span>
+</div>
+<!-- Field 4: Message (Required, Character Counter) -->
+<div class="flex flex-col gap-1 relative">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-on-surface uppercase" for="client_message">
+                  04. Project Scope &amp; Brief / 專案簡介與規格需求 <span class="text-primary">*</span>
+</label>
+<div class="font-label-mono text-label-mono text-on-surface-variant">
+<span class="text-primary" id="char-count">0</span> / 1200 CHARS
+                </div>
+</div>
+<textarea class="w-full px-space-md py-space-sm bg-surface-container rounded-lg text-on-surface font-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner resize-y" id="client_message" maxlength="1200" name="message" placeholder="Describe your vision, timeline, target deliverables (e.g. 4K renders, WebGL runtime, rigged assets), and reference links..." required="" rows="5"></textarea>
+<span class="hidden font-label-mono text-label-mono text-error flex items-center gap-1 mt-1" id="message-error">
+<span class="material-symbols-outlined text-xs">error</span> 請輸入至少 15 個字元的專案描述以利我們評估。
+              </span>
+</div>
+<!-- CAPTCHA Verification Simulation & Security Handshake -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between flex-wrap gap-space-sm">
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input class="w-5 h-5 accent-primary-container rounded bg-surface-container-high cursor-pointer" id="captcha-check" required="" type="checkbox"/>
+<span class="font-label-mono text-label-mono text-on-surface">I am human &amp; agree to Studio NDA terms / 人機驗證</span>
+</label>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-primary">security</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SHA-256 ZERO BOT SHIELD</span>
+</div>
+</div>
+<!-- Submit Button & Anti-Double-Submission Handler -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md pt-space-xs">
+<button class="w-full sm:w-auto px-space-xl py-space-md rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-space-sm shadow-[0_0_20px_rgba(0,240,255,0.3)] hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed group" id="submit-btn" type="submit">
+<!-- Default state icon -->
+<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" id="btn-icon">send</span>
+<!-- Loading Spinner state -->
+<svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-on-primary-container hidden" fill="none" id="btn-spinner" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+<span id="btn-text">Transmit Inquiry / 發送專案委託</span>
+</button>
+<span class="font-label-mono text-label-mono text-on-surface-variant text-center sm:text-left">
+                Typical reply window: <strong class="text-on-surface">≤ 24h</strong>. Direct NDA available upon kickoff.
+              </span>
+</div>
+</form>
+<!-- Direct Mailto Fallback Alternative Trigger -->
+<div class="pt-space-md flex items-center justify-between text-on-surface-variant">
+<span class="font-label-mono text-label-mono">Prefer native email client?</span>
+<a class="font-label-mono text-label-mono text-primary hover:underline flex items-center gap-1" href="mailto:contact@kaizenstudio.design?subject=Commission%20Brief%20-%20Kaizen%20Studio">
+              Launch Direct Mailto Fallback <span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client FAQ Accordion Section -->
+<section class="w-full px-margin md:px-margin-desktop py-space-xl">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-lg">
+<!-- FAQ Section Header -->
+<div class="flex flex-col gap-space-xs text-center items-center">
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high">
+<span class="material-symbols-outlined text-sm text-primary">help</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Client Intel &amp; Guidelines</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold uppercase tracking-tight">
+          Frequently Asked Questions / 常見合作諮詢
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          清楚透明的交件格式、預算架構與製作期程，確保跨國與各型專案流暢運作。
+        </p>
+</div>
+<!-- Accordion Container -->
+<div class="flex flex-col gap-space-sm" id="faq-accordion">
+<!-- Accordion Item 1: Timeline -->
+<div class="rounded-xl bg-surface-container-low shadow-lg overflow-hidden transition-all duration-300">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left cursor-pointer group hover:bg-surface-container" type="button">
+<div class="flex items-center gap-space-md">
+<span class="font-label-mono text-label-mono text-primary">01 /</span>
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors">
+                What are typical production timelines? / 專案製作時程通常需要多久？
+              </span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-transform duration-300 transform faq-arrow">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md flex flex-col gap-space-xs">
+<p>
+              Depending on scope, standalone 3D Key Visuals generally require <strong>1.5 to 3 weeks</strong> from initial concept moodboard to final 8K render passes. Full-scale CGI animations (15–60 seconds) or interactive WebGL environments require <strong>4 to 8 weeks</strong>, partitioned into Milestone Checkpoints: Styleframe Approval → Greybox Animation → Lighting &amp; Shader Refinement → Final Mastering.
+            </p>
+<p class="text-body-sm text-on-surface-variant">
+              單張高解析度靜態主視覺通常需要 1.5 至 3 週；完整的商業動態影像或 3D WebGL 沉浸式網站則為 4 至 8 週，包含嚴格的階段審核確認。
+            </p>
+</div>
+</div>
+<!-- Accordion Item 2: Budget Expectations -->
+<div class="rounded-xl bg-surface-container-low shadow-lg overflow-hidden transition-all duration-300">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left cursor-pointer group hover:bg-surface-container" type="button">
+<div class="flex items-center gap-space-md">
+<span class="font-label-mono text-label-mono text-secondary">02 /</span>
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary-fixed transition-colors">
+                Budget structures &amp; fee expectations / 專案報價結構與預算規範？
+              </span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-transform duration-300 transform faq-arrow">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md flex flex-col gap-space-xs">
+<p>
+              We operate on fixed-fee project retainers customized to geometry complexity, lighting fidelity, and commercial usage rights. Minimum commission retainers start at $2,500 USD for single concept visuals. Comprehensive commercial brand packages and interactive digital spaces are scoped upon receiving your brief. 50% deposit upon milestone contract signoff, 50% upon final master bundle delivery.
+            </p>
+<p class="text-body-sm text-on-surface-variant">
+              費用依幾何複雜度、著色精細度與商業授權範疇訂定。單一概念美術專案門檻自 2,500 美元起；品牌整案規劃將在檢視 Brief 後提供詳細工時與里程碑報價單。
+            </p>
+</div>
+</div>
+<!-- Accordion Item 3: File Deliverables (GLTF, OBJ, ProRes, etc.) -->
+<div class="rounded-xl bg-surface-container-low shadow-lg overflow-hidden transition-all duration-300">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left cursor-pointer group hover:bg-surface-container" type="button">
+<div class="flex items-center gap-space-md">
+<span class="font-label-mono text-label-mono text-primary">03 /</span>
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors">
+                What file deliverables do you supply? / 最終交付的檔案格式有哪些？
+              </span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-transform duration-300 transform faq-arrow">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md flex flex-col gap-space-xs">
+<p>
+              We provide industry-standard production packages tailored to your engineering and broadcasting pipeline:
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs font-label-mono text-label-mono">
+<div class="p-space-sm rounded bg-surface-container flex flex-col">
+<strong class="text-primary">3D Realtime &amp; Assets</strong>
+<span>GLTF, GLB, USDZ, FBX, OBJ (PBR 4K/8K UDIM Maps)</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col">
+<strong class="text-secondary">Motion &amp; Video</strong>
+<span>Apple ProRes 4444 XQ, 4K Master MP4, Alpha Channel</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col">
+<strong class="text-on-surface">Static Prints</strong>
+<span>32-bit OpenEXR, 16-bit TIFF, CMYK Print Ready</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 4: Confidentiality & NDA -->
+<div class="rounded-xl bg-surface-container-low shadow-lg overflow-hidden transition-all duration-300">
+<button class="faq-toggle w-full p-space-lg flex items-center justify-between text-left cursor-pointer group hover:bg-surface-container" type="button">
+<div class="flex items-center gap-space-md">
+<span class="font-label-mono text-label-mono text-on-surface-variant">04 /</span>
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Can we sign an NDA before project briefing? / 是否可在專案諮詢前簽署保密協議？
+              </span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-transform duration-300 transform faq-arrow">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md flex flex-col gap-space-xs">
+<p>
+              Absolutely. Over 60% of our enterprise hardware and unreleased intellectual property projects operate under strict Non-Disclosure Agreements. You can indicate NDA requirement directly inside the form or email us your mutual NDA template prior to sending confidential IP materials.
+            </p>
+<p class="text-body-sm text-on-surface-variant">
+              完全沒問題。我們經常參與未公開旗艦產品或前瞻 IP 研發，歡迎隨時透過電子郵件或表單附註提供貴公司的雙向 NDA 模板。
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client-Side Scripting -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Email Copy Interaction
+      const copyBtn = document.getElementById('copy-email-btn');
+      const copyToast = document.getElementById('copy-toast');
+      const copyIcon = document.getElementById('copy-icon');
+      const copyText = document.getElementById('copy-text');
+      const emailAddress = 'contact@kaizenstudio.design';
+
+      if (copyBtn) {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(emailAddress);
+            copyToast.classList.remove('hidden');
+            copyIcon.textContent = 'done';
+            copyText.textContent = 'Copied to Clipboard!';
+            setTimeout(() => {
+              copyToast.classList.add('hidden');
+              copyIcon.textContent = 'content_copy';
+              copyText.textContent = 'Copy Email Address';
+            }, 3000);
+          } catch (err) {
+            // Fallback selection
+            const input = document.createElement('input');
+            input.value = emailAddress;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            copyToast.classList.remove('hidden');
+            setTimeout(() => copyToast.classList.add('hidden'), 3000);
+          }
+        });
+      }
+
+      // 2. Character Counter
+      const messageInput = document.getElementById('client_message');
+      const charCounter = document.getElementById('char-count');
+      if (messageInput && charCounter) {
+        messageInput.addEventListener('input', () => {
+          const count = messageInput.value.length;
+          charCounter.textContent = count;
+          if (count > 1000) {
+            charCounter.classList.add('text-secondary');
+            charCounter.classList.remove('text-primary');
+          } else {
+            charCounter.classList.remove('text-secondary');
+            charCounter.classList.add('text-primary');
+          }
+        });
+      }
+
+      // 3. Real-time Field Validation Setup
+      const form = document.getElementById('contact-form');
+      const nameInput = document.getElementById('client_name');
+      const emailInput = document.getElementById('client_email');
+      const subjectInput = document.getElementById('client_subject');
+      const captchaInput = document.getElementById('captcha-check');
+      const submitBtn = document.getElementById('submit-btn');
+      const btnSpinner = document.getElementById('btn-spinner');
+      const btnIcon = document.getElementById('btn-icon');
+      const btnText = document.getElementById('btn-text');
+      const alertBox = document.getElementById('form-alert');
+      const alertTitle = document.getElementById('alert-title');
+      const alertMessage = document.getElementById('alert-message');
+      const alertIcon = document.getElementById('alert-icon');
+
+      const nameError = document.getElementById('name-error');
+      const nameCheck = document.getElementById('name-check');
+      const emailError = document.getElementById('email-error');
+      const emailCheck = document.getElementById('email-check');
+      const subjectError = document.getElementById('subject-error');
+      const messageError = document.getElementById('message-error');
+
+      // RFC-5322 Compliant Email Regex
+      const rfcEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+      const validateName = () => {
+        const val = nameInput.value.trim();
+        if (val.length < 2) {
+          nameError.classList.remove('hidden');
+          nameCheck.classList.add('hidden');
+          nameInput.classList.add('bg-error-container/20');
+          return false;
+        } else {
+          nameError.classList.add('hidden');
+          nameCheck.classList.remove('hidden');
+          nameInput.classList.remove('bg-error-container/20');
+          return true;
+        }
+      };
+
+      const validateEmail = () => {
+        const val = emailInput.value.trim();
+        if (!rfcEmailRegex.test(val)) {
+          emailError.classList.remove('hidden');
+          emailCheck.classList.add('hidden');
+          emailInput.classList.add('bg-error-container/20');
+          return false;
+        } else {
+          emailError.classList.add('hidden');
+          emailCheck.classList.remove('hidden');
+          emailInput.classList.remove('bg-error-container/20');
+          return true;
+        }
+      };
+
+      const validateSubject = () => {
+        if (!subjectInput.value) {
+          subjectError.classList.remove('hidden');
+          subjectInput.classList.add('bg-error-container/20');
+          return false;
+        } else {
+          subjectError.classList.add('hidden');
+          subjectInput.classList.remove('bg-error-container/20');
+          return true;
+        }
+      };
+
+      const validateMessage = () => {
+        const val = messageInput.value.trim();
+        if (val.length < 15) {
+          messageError.classList.remove('hidden');
+          messageInput.classList.add('bg-error-container/20');
+          return false;
+        } else {
+          messageError.classList.add('hidden');
+          messageInput.classList.remove('bg-error-container/20');
+          return true;
+        }
+      };
+
+      nameInput.addEventListener('blur', validateName);
+      nameInput.addEventListener('input', () => { if (!nameError.classList.contains('hidden')) validateName(); });
+      
+      emailInput.addEventListener('blur', validateEmail);
+      emailInput.addEventListener('input', () => { if (!emailError.classList.contains('hidden')) validateEmail(); });
+
+      subjectInput.addEventListener('change', validateSubject);
+      messageInput.addEventListener('blur', validateMessage);
+
+      // 4. Form Submit & Anti-Spam / Anti-Double-Submission Logic
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Check Anti-Spam Honeypot field
+        const honeypot = document.getElementById('honeypot_field').value;
+        if (honeypot) {
+          console.warn('Bot submission blocked.');
+          return;
+        }
+
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isSubjectValid = validateSubject();
+        const isMessageValid = validateMessage();
+        const isCaptchaValid = captchaInput.checked;
+
+        if (!isCaptchaValid) {
+          alertBox.className = 'p-space-md rounded-lg flex items-start gap-space-md bg-error-container text-on-error-container shadow-lg';
+          alertIcon.textContent = 'shield';
+          alertTitle.textContent = '人機驗證未完成';
+          alertMessage.textContent = '請勾選人機驗證與條款複選框以完成發送。';
+          alertBox.classList.remove('hidden');
+          return;
+        }
+
+        if (isNameValid && isEmailValid && isSubjectValid && isMessageValid && isCaptchaValid) {
+          // Disable button to prevent double-submission & toggle spinner
+          submitBtn.disabled = true;
+          btnSpinner.classList.remove('hidden');
+          btnIcon.classList.add('hidden');
+          btnText.textContent = 'Transmitting Data...';
+          alertBox.classList.add('hidden');
+
+          // Simulate asynchronous transmission API request
+          setTimeout(() => {
+            // Restore button state
+            submitBtn.disabled = false;
+            btnSpinner.classList.add('hidden');
+            btnIcon.classList.remove('hidden');
+            btnText.textContent = 'Transmit Inquiry / 發送專案委託';
+
+            // Show Success Notification Banner
+            alertBox.className = 'p-space-md rounded-lg flex items-start gap-space-md bg-secondary-container/40 text-on-surface shadow-xl';
+            alertIcon.textContent = 'check_circle';
+            alertIcon.className = 'material-symbols-outlined text-2xl mt-0.5 text-primary-container';
+            alertTitle.textContent = '訊息已成功發送！';
+            alertMessage.textContent = '我們會於 24 小時內回覆。感謝您的委託諮詢，專案資料已妥善加密存檔。';
+            alertBox.classList.remove('hidden');
+
+            // Reset Form Inputs
+            form.reset();
+            charCounter.textContent = '0';
+            nameCheck.classList.add('hidden');
+            emailCheck.classList.add('hidden');
+          }, 1400);
+        } else {
+          // Show error banner
+          alertBox.className = 'p-space-md rounded-lg flex items-start gap-space-md bg-error-container text-on-error-container shadow-lg';
+          alertIcon.textContent = 'report_problem';
+          alertTitle.textContent = '欄位填寫不完全';
+          alertMessage.textContent = '請檢查紅框標示項目並確認必填資訊正確無誤。';
+          alertBox.classList.remove('hidden');
+        }
+      });
+
+      // 5. Accordion Interactive Toggle
+      const accordionToggles = document.querySelectorAll('.faq-toggle');
+      accordionToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const arrow = toggle.querySelector('.faq-arrow');
+          const isCurrentlyOpen = !content.classList.contains('hidden');
+
+          // Close all open items first for clean accordion UX
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-arrow').forEach(a => a.classList.remove('rotate-180'));
+
+          if (!isCurrentlyOpen) {
+            content.classList.remove('hidden');
+            arrow.classList.add('rotate-180');
+          }
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.3)]"><div class="w-full px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface uppercase">Kaizen Studio</span><p class="font-label-mono text-label-mono text-on-surface-variant">© 2024 Kaizen Studio. All digital assets &amp; 3D entities reserved.</p></div><div class="flex items-center gap-space-lg"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Instagram</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">Behance</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">ArtStation</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">LinkedIn</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase" href="#">GitHub</a></div></div></footer></body></html>
