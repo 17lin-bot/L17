@@ -53,6 +53,7 @@ c:/Users/user/Desktop/41248417/
 │   │   ├── SkillsView.tsx            # 專業技能體系：4 大專業領域視圖切換、10 款 DCC 軟體工作棧
 │   │   └── ContactView.tsx           # 委託諮詢：一鍵複製 Email、社群管道、表單、FAQ
 │   ├── types.ts                      # TypeScript 介面與型別定義
+│   ├── vite-env.d.ts                 # Vite 與靜態資源 (*.css, *.svg, 圖片等) 全域型別宣告
 │   ├── App.tsx                       # 單頁路由狀態管理與 URL Hash 同步
 │   ├── index.css                     # 全域 CSS 與 Tailwind 載入
 │   └── main.tsx                      # React 應用程式掛載入口
