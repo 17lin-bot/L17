@@ -63,6 +63,7 @@ c:/Users/user/Desktop/41248417/
 ├── tailwind.config.js                # Tailwind CSS 設計系統擴充設定
 ├── tsconfig.json                     # TypeScript 編譯器選項
 ├── vite.config.ts                    # Vite 伺服器與建置設定 (Port 3000)
+├── .gitignore                        # Git 忽略清單 (排除 node_modules, dist)
 └── ReadMe.md                         # 本說明文件
 ```
 
